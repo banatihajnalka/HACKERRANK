@@ -7,29 +7,29 @@
 
 public class CountingValleys {
 
-    public static void main(String[] args) {
-        int numberOfSteps = 8;
-        String path = "UDDDUDUU";
+  public static void main(String[] args) {
+    int numberOfSteps = 8;
+    String path = "UDDDUDUU";
 
-        System.out.println(countingValleys(numberOfSteps,path));
-    }
+    System.out.println(countingValleys(numberOfSteps, path));
+  }
 
-    private static int countingValleys(int n, String s) {
-        char[] steps = s.toCharArray();
-        int altitude = 0;
-        int valley = 0;
+  private static int countingValleys(int n, String s) {
+    char[] steps = s.toCharArray();
+    int altitude = 0;
+    int valley = 0;
 
-        for (Character step : steps) {
-            if (step.equals('D')) {
-                altitude--;
-            } else {
-                altitude++;
-                if (altitude == 0) {
-                    valley++;
-                }
-            }
+    for (Character step : steps) {
+      if (step.equals('D')) {
+        altitude--;
+      } else {
+        altitude++;
+        if (altitude == 0) {
+          valley++;
         }
-        return valley;
-
+      }
     }
+    return valley;
+
+  }
 }

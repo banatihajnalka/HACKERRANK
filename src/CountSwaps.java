@@ -21,6 +21,5 @@ public class CountSwaps {
     System.out.println("First Element: " + a[0]);
     System.out.println("Last Element: " + a[a.length - 1]);
 
-
   }
 }
