@@ -24,11 +24,10 @@ public class GameOfThrones {
 
     Iterator<Map.Entry<Character, Integer>> i = charMap.entrySet().iterator();
     int odd = 0;
-    int even = 0;
     while (i.hasNext()) {
       Map.Entry<Character, Integer> entry = i.next();
       Integer value = entry.getValue();
-      if (value % 2 == 0) even += 1;
+      if (value % 2 == 0) ;
       else {
         odd++;
       }
@@ -36,3 +35,4 @@ public class GameOfThrones {
     return ((odd == 0 || odd == 1) ? "YES" : "NO");
   }
 }
+
