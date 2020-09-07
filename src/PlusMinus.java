@@ -8,7 +8,7 @@ public class PlusMinus {
     plusMinus(arr);
   }
 
-  static void plusMinus(int[] arr) {
+  private static void plusMinus(int[] arr) {
     DecimalFormat df = new DecimalFormat("#,###,##0.000000");
     double length = arr.length;
     double minus = 0;
